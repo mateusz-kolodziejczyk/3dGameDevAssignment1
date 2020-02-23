@@ -16,6 +16,7 @@ public class Dayscale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float angleThisFrame = Time.deltaTime / 360*minutesPerSecond
+        float angleThisFrame = Time.deltaTime / 360 * minutesPerSecond;
+        transform.RotateAround(transform.position, Vector3.right, angleThisFrame);
     }
 }
